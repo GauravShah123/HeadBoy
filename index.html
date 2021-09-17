@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Shah for Head Boy</title>
+    <meta name="description" content="Vote for Gaurav Shah and your next headboy.">
+    <meta property="og:title" content="#VoteforGaurav" />
+    <meta property="og:description" content="Vote for Gaurav Shah and your next headboy." />
+    <meta property="og:image" content="ogimage.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Icons/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <img src="logo.svg" alt="Gaurav Logo" class="logo" onclick="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });">
+        <div class="header">
+            <h2 class="header-typewriter">I want to
+                <span class="txt-rotate" data-period="1000" data-rotate='[ "inspire.", "innovate.", "implement." ]'></span>
+            </h2>
+            <p class="header-content">Naam to suna hoga, I’m Gaurav Shah and I am contesting for the post of head boy. Please make an informed decision about voting for me by taking a look at my website below.
+            </p>
+            <button type="submit" class="header-btn" id="play-video" href="#">See More</button>
+            <button type="submit" class="dark-btn" id="dark" onclick="dark()">Dark Mode</button>
+        </div>
+        <img src="header-image.svg" alt="" class="header-img">
+    </div>
+
+    <!--CONTENTS-->
+    <div class="contents">
+        <h1 class="contents-title">Contents</h1>
+        <h3 class="contents-subtitle">Click to see</h3>
+        <div class="content-elements-grid">
+            <div class="content-element " onclick="document.querySelector('.speech').scrollIntoView();">
+                <img src="./Icons/3.svg" alt="Speech" class="content-element-icon">
+                <div class="content-element-text">Speech</div>
+            </div>
+            <div class="content-element" onclick="document.querySelector('.about').scrollIntoView();">
+                <img src="./Icons/1.svg" alt="Who am I?" class="content-element-icon">
+                <div class="content-element-text">Who am I?</div>
+            </div>
+            <div class="content-element" onclick="document.querySelector('.vote').scrollIntoView();">
+                <img src=" ./Icons/2.svg " alt="Why me? " class="content-element-icon ">
+                <div class="content-element-text ">Why me?</div>
+            </div>
+
+            <div class="content-element" onclick="document.querySelector('.talk').scrollIntoView();">
+                <img src=" ./Icons/4.svg " alt="Talk to me " class="content-element-icon ">
+                <div class="content-element-text ">Talk to me</div>
+            </div>
+        </div>
+    </div>
+
+    <!--SPEECH-->
+    <div class="speech">
+        <iframe width="560" height="315" id='video' src="https://www.youtube.com/embed/9J6oQHV7TIY?controls=0" title="#VoteforGaurav" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            class="speech-video"></iframe>
+    </div>
+
+
+    <!--WHO AM I?-->
+    <div class="about ">
+        <div class="about-watermark ">Who am I?</div>
+
+        <div class="about-content ">
+            <h1 class="about-content-title ">Who am I?</h1>
+            <p class="about-content-text ">To many of you I am just an ordinary student. I love watching Netflix shows and YouTube videos. I hate homework. I am artistic; I like to create graphics, videos and websites (like this one). I love listening to music and singing. Lastly,
+                I am grateful to be surrounded by amazing friends.</p>
+        </div>
+        <img src="Gaurav.svg " alt="Gaurav Illustration " class="about-gauravImage ">
+        <img src="Gaurav-hand.svg " alt="Gaurav Shah 's Hand" class="about-gauravImageHand">
+    </div>
+
+    <!--WHY VOTE FOR ME?-->
+    <div class="vote">
+        <img src="Vote.png" alt="#VoteForGaurav" class="vote-image">
+        <div class="vote-content">
+            <h1 class="vote-content-title">Why vote for me?
+            </h1>
+            <p class="vote-content-text">A vote for me will never be wasted. I come bearing a solid action plan, leadership skills and <b>the will to serve</b>. From expanding the scope of co-curriculars, to reducing the burden on students and putting ILS on the global map, I want
+                to do it all. Along with my ideas, I want to hear from you. I am a good listener and believe in the ideas of ILS students. I am a talented and experienced leader as proved by my team’s successes in the WGHS Investment Competition and Toycathon
+                among many others. Now, it is time for me to use those talents in service of you and our school. <b>Together, let’s transform our ideas into reality</b>.
+
+            </p>
+        </div>
+    </div>
+
+    <!--MEMES-->
+    <div class="memes">
+        <div class="meme-grid">
+            <img src="meme1.png" alt="Meme 1" class="meme">
+            <img src="meme2.png" alt="Meme 2" class="meme">
+            <img src="meme3.png" alt="Meme 3" class="meme">
+            <img src="meme4.png" alt="Meme4" class="meme">
+        </div>
+    </div>
+
+    <!--QUALITIES-->
+    <div class="contents qualities">
+        <h1 class="contents-title">I am...</h1>
+        <div class="content-elements-grid qualities-grid">
+            <div class="quality-element">
+                <div class="quality-element-text">Honest</div>
+            </div>
+            <div class="quality-element">
+                <div class="quality-element-text ">Strategic</div>
+            </div>
+            <div class="quality-element">
+                <div class="quality-element-text ">Active</div>
+            </div>
+            <div class="quality-element">
+                <div class="quality-element-text ">Resourceful</div>
+            </div>
+            <div class="quality-element">
+                <div class="quality-element-text ">A Smart Worker</div>
+            </div>
+            <div class="quality-element ">
+                <div class="quality-element-text">An Inspiring Leader</div>
+            </div>
+
+            <div class="quality-element">
+                <div class="quality-element-text">A Good Listener</div>
+            </div>
+
+            <div class="quality-element ">
+                <div class="quality-element-text">A Problem Solver</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--I WANT TO HEAR FROM YOU-->
+    <div class="talk">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOE4Z6lf41uXJ6MF6donWLHVAlG2SCfVYS2OJbtY0V7EPiSA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling='no' class="talk-message">I want to hear from you...</iframe>
+
+    </div>
+
+
+    <!--FOOTER-->
+    <div class="footer">
+        <a href="https://sumedhamohanils.wixsite.com/my-site-3"><img src="sumedha.png" alt="Sumedha Mohan" class="sumedha-image"></a>
+        <h3 class="also-see">Also see <a href="https://sumedhamohanils.wixsite.com/my-site-3">Sumedha Mohan.</a></h3>
+        <h4 class="footer-name">Designed and coded by Gaurav Shah</h4>
+
+    </div>
+
+    <!--FLOATING IMAGE-->
+    <!--Insert gaurav waving hand image code here-->
+    <img src="./Icons/vote-for-gaurav.svg" alt="#VoteforGaurav" class="floating-image" onclick='hide()'>
+
+    <!--hide()-->
+    <script>
+        function hide() {
+            document.querySelector('.floating-image').style.opacity = '0'
+            document.querySelector('.floating-image').style.pointerEvents = 'none'
+        }
+    </script>
+    <!--JAVASCRIPT-->
+    <script>
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 1000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 2px solid var(--d2) }";
+            document.body.appendChild(css);
+        };
+
+        $(document).ready(function() {
+            $("#play-video").on("click", function(ev) {
+                $("#video")[0].src += "&autoplay=1";
+                ev.preventDefault();
+                window.scrollBy(0, window.innerHeight);
+            });
+        });
+
+        var root = document.querySelector(':root');
+
+
+
+        function dark() {
+            if (document.querySelector('.dark-btn').innerText == 'Dark Mode') {
+                root.style.setProperty('--bg', '#0F101B');
+                root.style.setProperty('--bgo', '#06D6A0');
+                root.style.setProperty('--l1', '#0F101B');
+                root.style.setProperty('--l2', '#18192A');
+                root.style.setProperty('--d1', '#fff');
+                root.style.setProperty('--d2', '#f2f2f2');
+                document.querySelector('.dark-btn').innerText = 'Light Mode';
+            } else {
+                root.style.setProperty('--bg', '#06D6A0');
+                root.style.setProperty('--bgo', '#0F101B');
+                root.style.setProperty('--l1', '#fff');
+                root.style.setProperty('--l2', '#f2f2f2');
+                root.style.setProperty('--d1', '#18192A');
+                root.style.setProperty('--d2', '#0F101B');
+                document.querySelector('.dark-btn').innerText = 'Dark Mode';
+            }
+        }
+        document.querySelector('.talk-message').scrollTop = 438;
+    </script>
+
+    <!--CSS-->
+    <style>
+        /* COLOURS */
+        
+         :root {
+            --bg: #06D6A0;
+            --bgo: #0F101B;
+            --green: #06D6A0;
+            --l1: #fff;
+            --l2: #f2f2f2;
+            --d1: #18192A;
+            --d2: #0F101B;
+        }
+        
+        html {
+            scroll-snap-type: x mandatory;
+            scroll-snap-type: y proximity;
+        }
+        
+        h3 {
+            font-weight: 300;
+            font-size: 16px;
+            color: var(--d1);
+        }
+        
+        h4 {
+            font-size: 14px;
+            color: var(--bgo);
+            font-weight: 300;
+        }
+        
+        a {
+            color: var(--bgo);
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            font-weight: bold;
+        }
+        
+        @media (min-width: 900px) {
+            h1 {
+                font-size: 50px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s;
+            scroll-behavior: smooth;
+        }
+        
+        html {
+            overflow-x: hidden;
+            color: var(--d2);
+        }
+        
+        body {
+            background: var(--l1);
+        }
+        
+        .logo {
+            position: fixed;
+            height: 65px;
+            top: -11px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 1;
+        }
+        
+        @media (min-width: 500px) {
+            .logo {
+                top: -11px;
+                left: 0px;
+                transform: translate(0, 0);
+            }
+        }
+        
+        .header-wrapper {
+            position: relative;
+        }
+        
+        .header {
+            height: 100vh;
+            background-color: var(--bg);
+            padding: 30px;
+            text-align: left;
+            scroll-snap-align: start;
+        }
+        
+        .header-typewriter {
+            margin-bottom: 20px;
+            margin-top: 10vh;
+            height: 80px;
+        }
+        
+        .header-btn {
+            padding: 7px 20px;
+            margin: 50px 0;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            background: var(--d2);
+            font-size: 15px;
+            color: var(--l1);
+            font-weight: lighter;
+        }
+        
+        .header-btn:hover,
+        .header-btn:active,
+        .header-btn:focus {
+            background: var(--bgo);
+            color: var(--l2);
+        }
+        
+        .dark-btn {
+            padding: 7px 20px;
+            margin: 50px 0;
+            margin-left: 10px;
+            border-radius: 40px;
+            outline: none;
+            border: 2px var(--d2) solid;
+            background: var(--bg);
+            font-size: 15px;
+            color: var(--d2);
+            font-weight: lighter;
+        }
+        
+        .dark-btn:hover,
+        .dark-btn:active,
+        .dark-btn:focus {
+            color: var(--bgo);
+            border: 2px solid var(--bgo);
+        }
+        
+        @media (min-width: 500px) {
+            .dark-btn,
+            .header-btn {
+                font-size: 18px;
+            }
+        }
+        
+        .header-img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 0px;
+            height: 30vh;
+            object-fit: cover;
+            object-position: top;
+            width: 60%;
+            border-radius: 20px 20px 0px 0px;
+            color: #000;
+        }
+        
+        @media (min-width: 500px) {
+            .header-img {
+                box-shadow: 0px 0px 10px;
+                width: 200px;
+                top: 50%;
+                left: 95%;
+                transform: translate(-50%, -50%);
+                height: calc(200px * 525/252);
+                border-radius: 20px;
+            }
+            .header-typewriter {
+                margin-top: 25vh;
+            }
+            .header-content {
+                width: 300px;
+            }
+            .header {
+                padding-left: 10%;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .header-img {
+                box-shadow: 0px 0px 10px;
+                width: 250px;
+                top: 50%;
+                left: 75%;
+                transform: translate(-50%, -50%) rotate(15deg);
+                height: calc(250px * 525/252);
+                border-radius: 25px;
+            }
+            .header-typewriter {
+                margin-top: 25vh;
+                font-size: 50px;
+            }
+            .header-content {
+                width: 500px;
+                margin-bottom: 5vh;
+                font-size: 20px;
+            }
+            .header {
+                padding-left: 10%;
+            }
+        }
+        /* CONTENTS */
+        
+        .contents {
+            padding: 5vh 0px;
+            text-align: center;
+            scroll-snap-align: start;
+        }
+        
+        .content-elements-grid {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: 200px 200px 200px 200px;
+            margin: 30px auto;
+            margin-bottom: 0;
+            grid-gap: 20px;
+            width: 200px;
+        }
+        
+        @media (min-width: 500px) {
+            .content-elements-grid {
+                display: grid;
+                grid-template-columns: 200px 200px;
+                grid-template-rows: 200px 200px;
+                margin-bottom: 0;
+                grid-gap: 20px;
+                width: 430px;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .content-elements-grid {
+                display: grid;
+                grid-template-columns: 200px 200px 200px 200px;
+                grid-template-rows: 200px;
+                grid-gap: 20px;
+                width: 860px;
+            }
+        }
+        
+        .content-element {
+            background: var(--l2);
+            text-align: center;
+            padding: 30px;
+            padding-top: 60px;
+        }
+        
+        .content-element-text {
+            padding-top: 10px;
+        }
+        
+        .content-element-icon {
+            fill: var(--green);
+        }
+        /* ABOUT */
+        
+        .about {
+            background: var(--l2);
+            padding: 5vh 30px;
+            position: relative;
+            min-height: 100vh;
+            scroll-snap-align: start;
+        }
+        
+        .about-watermark {
+            color: var(--d1);
+            font-size: 90px;
+            font-weight: bold;
+            position: absolute;
+            white-space: nowrap;
+            opacity: 0.05;
+            top: 30vh;
+            left: -30px;
+        }
+        
+        .about-content-title {
+            text-align: right;
+        }
+        
+        .about-content-text {
+            margin-top: 30px;
+            text-align: right;
+        }
+        
+        .about-gauravImage {
+            height: 50vh;
+            position: absolute;
+            bottom: 0;
+            right: 75px;
+        }
+        
+        .about-gauravImageHand {
+            height: 60px;
+            position: absolute;
+            bottom: 20vh;
+            right: 50px;
+            transform: translate(-10px, -20px) rotate(45deg);
+            display: block;
+            animation: hi 1.5s infinite;
+        }
+        
+        @keyframes hi {
+            0% {
+                transform: translate(-10px, -20px) rotate(45deg);
+            }
+            50% {
+                transform: rotate(-45deg) translate(-15px, -40px);
+            }
+            100% {
+                transform: translate(-10px, -20px) rotate(45deg);
+            }
+        }
+        
+        @media (min-width: 500px) {
+            .about {
+                min-height: 55vh;
+            }
+            .about-content-title {
+                text-align: left;
+            }
+            .about-content-text {
+                text-align: left;
+                width: calc(100% - 300px);
+            }
+            .about-watermark {
+                font-size: 150px;
+                top: 20vh;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .about {
+                padding-left: 10%;
+            }
+            .about-content {
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+            }
+            .about-content-text {
+                font-size: 18px;
+                width: 60%;
+            }
+            .about-watermark {
+                font-size: 200px;
+                top: 0vh;
+            }
+        }
+        /* VOTE */
+        
+        .vote {
+            margin-top: 5vh;
+            padding-bottom: 5vh;
+            scroll-snap-align: start;
+        }
+        
+        .vote-image {
+            width: 100%;
+        }
+        
+        .vote-content {
+            padding: 0 30px;
+        }
+        
+        .vote-content-title {
+            margin: 30px 0;
+        }
+        
+        @media (min-width: 900px) {
+            .vote {
+                min-height: 70vh;
+                position: relative;
+                padding-left: 10%;
+                margin-bottom: 5vh;
+            }
+            .vote-image {
+                width: 400px;
+                height: 100%;
+                top: 0;
+                position: absolute;
+                right: 0;
+                object-fit: cover;
+            }
+            .vote-content-text,
+            .vote-content-title {
+                width: calc(90% - 400px);
+            }
+            .vote-content {
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+                padding: 0;
+            }
+        }
+        /* MEMES */
+        
+        .memes {
+            background-color: var(--l2);
+            padding: 5vh 0;
+            position: relative;
+        }
+        
+        .meme-grid {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: 200px 200px 200px 200px;
+            margin: 0px auto;
+            grid-gap: 20px;
+            width: 200px;
+        }
+        
+        .meme {
+            object-fit: contain;
+            height: 200px;
+            width: 200px;
+        }
+        
+        @media (min-width: 500px) {
+            .meme-grid {
+                display: grid;
+                grid-template-columns: 200px 200px;
+                grid-template-rows: 200px 200px;
+                grid-gap: 20px;
+                width: 430px;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .meme-grid {
+                display: grid;
+                grid-template-columns: 250px 250px 250px 250px;
+                grid-template-rows: 250px;
+                margin: 0;
+                grid-gap: 30px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 1090px;
+            }
+            .meme {
+                object-fit: contain;
+                height: 250px;
+                width: 250px;
+            }
+        }
+        /* CONTENTS */
+        
+        .qualities-grid {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: repeat(8, 50px);
+            margin: 30px auto;
+            grid-gap: 20px;
+            width: 200px;
+        }
+        
+        @media (min-width: 500px) {
+            .qualities-grid {
+                display: grid;
+                grid-template-columns: 200px 200px;
+                grid-template-rows: repeat(4, 50px);
+                margin: 30px auto;
+                grid-gap: 20px;
+                width: 430px;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .qualities-grid {
+                display: grid;
+                grid-template-columns: 200px 200px 200px 200px;
+                grid-template-rows: repeat(2, 50px);
+                margin: 30px auto;
+                grid-gap: 20px;
+                width: 860px;
+            }
+        }
+        
+        .quality-element {
+            border-radius: 12px;
+            background-color: var(--l2);
+        }
+        
+        .quality-element:hover {
+            background-color: var(--bg);
+            color: var(--d2);
+        }
+        
+        .quality-element-text {
+            line-height: 50px;
+        }
+        
+        .qualities {
+            background-color: var(--l1);
+            scroll-snap-align: none;
+        }
+        /* SPEECH */
+        
+        .speech {
+            scroll-snap-align: start;
+            margin: 5vh 0;
+            margin-top: 0;
+            height: 350px;
+            position: relative;
+        }
+        
+        .speech-video {
+            width: 100%;
+        }
+        
+        @media (min-width:900px) {
+            .speech {
+                padding: 0 10%;
+            }
+            .speech-video {
+                width: calc(350px * 16/9);
+                height: 350px;
+                border-radius: 12px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+        /* TALK (HEAR FROM THEM) */
+        
+        .talk {
+            margin: 0;
+            padding: 5vh 15px;
+            background-color: var(--l2);
+            position: relative;
+        }
+        
+        .talk-message {
+            width: 100%;
+            height: 450px;
+        }
+        
+        @media (min-width: 600px) {
+            .talk-message {
+                height: 350px;
+            }
+        }
+        /* FOOTER */
+        
+        .footer {
+            width: 100%;
+            height: 15vh;
+            background-color: var(--bg);
+        }
+        
+        .footer>* {
+            text-align: center;
+        }
+        
+        .floating-image {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 300px;
+            animation: rise 90s;
+        }
+        
+        .sumedha-image {
+            position: relative;
+            height: 10vh;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+        
+        .also-see {
+            transform: translateY(-100%);
+        }
+        
+        .footer-name {
+            transform: translateY(-150%);
+        }
+        
+        @keyframes rise {
+            0% {
+                transform: translateY(400px);
+            }
+            97% {
+                transform: translateY(400px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+
+    <!-- CUSTOM SCROLLBAR -->
+    <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 14px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: var(--l1);
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: var(--green);
+            border: 3.5px var(--l1) solid;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: var(--bgo);
+        }
+    </style>
+
+
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+
+</html>
